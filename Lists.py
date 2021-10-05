@@ -42,3 +42,14 @@ print(x, "\n")
 # Iteration
 for x in [1, 2, 3]:
     print(x)
+    
+# Reversing a list
+print(list1[::-1])
+
+# List comprehension, get only the int values
+int_values = [ x for x in list1 if type(x) == int]
+
+# get list element and its position in the same loop
+for position, value in enumerate(list1):;
+    # Python >= 3.8
+    print(f"{position=}, {value=}")
